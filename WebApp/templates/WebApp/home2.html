@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'WebApp/home.html' %}
+
+{% block title %}
+    Home 2
+{% endblock %}
+
+{% block form %}
+    <p class="centerLinks"><a href="{% url 'about us' %}" >About Us</a></p>
+    <p class="centerLinks"><a href="{% url 'notifications' %}">Notifications</a></p>
+    <p class="centerLinks"><a href="{% url 'database' %}">Client&nbspArea</a></p>
+    <form action="{% url 'home page 3' %}">
+        <button type="submit" class="loginButton2" >
+            MORE
+        </button>
+    </form>
+
+{% endblock %}
+
+
+
+{% block homeLinks %}
+{% endblock %}

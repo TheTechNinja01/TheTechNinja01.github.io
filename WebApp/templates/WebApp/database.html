@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Database</title>
+    <link rel="stylesheet" href="{% static 'appStyle.css' %}">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="fun()">
+    <a href="{% url 'home page 2' %}">
+        <i class="fa fa-chevron-circle-left" aria-hidden="true" id="backIcon"></i>
+    </a>
+    <img class="small_Icon" src="{% static 'SmartFD_Images_Icons\Smart FD logo.png' %}">
+            <form method="post" >
+                <i class="fa fa-search" aria-hidden="true" id="fileSearchIcon"></i>
+                <input class="fileSearchBar" name="fileSearchBar" type="text" placeholder="Search Folders/Files">
+                {% csrf_token %}
+                {% for img in myFile%}
+                    {% if folderDisplay in img.Folder_Location %}
+                        <div class="databaseFile">
+                            <button class="hideButton" type="submit" name="save_{{img.id}}" value="save">
+                                <img class="databaseFileIcon" src="{% static 'SmartFD_Images_Icons\FolderIcon.png' %}">
+                                <p class="databaseFileName">{{img.File_Name}}</p>
+                                <input class="hideText" name="myInfo_{{img.id}}" type="text" value="{{img.File_Name}}">
+                            </button>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </form>
+</body>
+<script type="text/javascript">
+</script>
+</html>
+
+<!--
+Failed to retrive image blob data from mysql using this
+<img src="data: image/jpeg;charset=utf-8;base64, {{img.My_File}}" width="120">
+-->

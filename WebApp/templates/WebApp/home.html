@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            Home
+        {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'appStyle.css' %}">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+</head>
+<body>
+    <img class="icon" src="{% static 'SmartFD_Images_Icons\Smart FD logo.png' %}">
+    <br>
+    {% block form %}
+        <form method="post" class="form" action="{% url 'home page 2' %}">
+        {% csrf_token%}
+            <label>Please Enter Your Email Below</label>
+            <br>
+            <input type="text" placeholder="Email" class="homeInput">
+            <br>
+            <label>Please Enter Your Password Below</label>
+            <br>
+            <input type="password" placeholder="Password" class="homeInput">
+            <br>
+            <label  class="keepLogged">Keep Me Logged In</label>
+            <input type="checkbox" class="checkbox">
+            <br>
+            <button type="submit" class="loginButton" >
+                LOGIN
+            </button>
+         </form>
+        {% endblock %}
+        <br>
+        {% block homeLinks %}
+            <p class="centerLinks" ><a href="{% url 'forgot password' %}" class="centerLinks">
+                Forgot&nbspPassword?
+            </a></p>
+            <br>
+            <p class="centerLinks"><a href="{% url 'about us' %}" class="centerLinks">
+                About&nbspSmart&nbspFinancial&nbspDirectors
+            </a></p>
+        {% endblock %}
+
+</body>
+</html>

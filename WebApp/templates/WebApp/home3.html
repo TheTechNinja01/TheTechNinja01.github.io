@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% extends 'WebApp/home.html' %}
+
+{% block title %}
+    Home 3
+{% endblock %}
+
+{% block form %}
+    <p class="centerLinks"><a href="{% url 'tickets' %}">Support&nbspTickets</a></p>
+    <!--<p class="centerLinks"><a>Admin&nbspLogin</a></p>-->
+    <br>
+    <p class="centerLinks"><a href="{% url 'home' %}">Log&nbspOut</a></p>
+    <form action="{% url 'home page 2' %}">
+        <button type="submit" class="loginButton2" >
+            Back
+        </button>
+    </form>
+
+{% endblock %}
+
+
+
+{% block homeLinks %}
+{% endblock %}

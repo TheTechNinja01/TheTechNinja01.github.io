@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'appStyle.css' %}">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="aboutUsTitle">
+        <a href="{{request.META.HTTP_REFERER|escape}}">
+            <i class="fa fa-chevron-circle-left" aria-hidden="true" id="backIcon"></i>
+        </a>
+        <label class="aboutUsLabel">About us</label>
+        <img class="aboutUsImg" src="{% static 'SmartFD_Images_Icons\gridcase7-1024x525.png' %}">
+    </section>
+
+    <section class="aboutUsSection1">
+        <p>Smart FD is a Durban based visionary financial management firm here to
+            serve start-up enterprises and long-serving owner-managed companies.
+            We currently operate in the greater Durban area with specific clients in the rest of South Africa.</p>
+
+        <p>The financial function is at the heart of every business. Sound financial planning
+            and management enable businesses to grow and flourish, while the lack thereof is
+            always a fundamental reason for failure. Being entrepreneurs ourselves, we understand
+            the significant role that finance plays in the success of a business.</p>
+
+        <p>Certain SME companies cannot afford to appoint directors and managers to correctly
+            steer their business in the right direction. Smart FD offers the solution of being able to
+            correctly navigate your business towards success without the burden of exorbitant costs.</p>
+
+        <p>We offer a personalized service tailor-made to suit your business. We have broad
+            experience in all aspects of accounting, auditing, tax and financial management.</p>
+
+        <p>We are always looking for opportunities for our firm to help your business from a
+            financial perspective or to network with our current clients to improve your growth.</p>
+
+        <p>Our specialities: Accounting, Finance, Managed Accounts, Business Strategy,
+            Financial Analysis, Financial Modelling, Financial Reporting, Financial Planning,
+            Strategic Planning, Strategic Modelling, Forecasting, Management Consulting,
+            Start-up Consulting, SME, Consulting, Tax, Pay Roll, Credit Control.</p>
+    </section>
+
+    <section class="aboutUsSection2">
+        <div class="imgText">
+            <h1>Need Help?</h1>
+            <p>Contact out team if you have any further questions.</p>
+            <p>We are here to help you.</p>
+            <form action="tel: +27 87 096 0900"><button class="aboutUsButton">Call Now</button></form>
+            <form action="mailto:courtney@smartfd.co.za"><button class="aboutUsButton">Email Now</button></form>
+            <p class="aboutUsButtonText" id="aboutUsButtonTextA">
+                +27 87 096 0900 &emsp; courtney@smartfd.co.za
+            </p>
+        </div>
+    </section>
+
+    <section class="aboutUsSection3">
+        <img class="aboutUsIcons" id="aboutUsIconA" src="{% static 'SmartFD_Images_Icons\icon1.png' %}">
+        <div class="aboutUsSection3Info" id="aboutUsSection3A">
+            <h2>Accounting & Payroll</h2>
+            <p>
+                Bookkeeping and accounting are integral components of any business. Bookkeeping services will ensure
+                that reliable and accurate books are kept for your company, enabling you to make informed decisions
+                promptly in order to minimise risks and maximise profits.
+            </p>
+        </div>
+
+        <div class="aboutUsSection3Info" id="aboutUsSection3B">
+            <h2>Financial Management</h2>
+            <p>
+                The backbone of our company is the outsourced function of a financial manager. We realised a few
+                years back that most owner managed businesses did not require a full time financial manager nor could
+                they afford such a person especially when starting out.
+            </p>
+        </div>
+        <img class="aboutUsIcons" id="aboutUsIconB" src="{% static 'SmartFD_Images_Icons\icon2.png' %}">
+
+        <img class="aboutUsIcons" id="aboutUsIconC" src="{% static 'SmartFD_Images_Icons\icon3.png' %}">
+         <div class="aboutUsSection3Info" id="aboutUsSection3C">
+             <h2>TAXATION</h2>
+            <p>
+                We offer a wide range of taxation services, including all SARS returns as well as strategically setting up
+                your business to be its most tax efficient. We are registered with SAIT and have concentrated our business
+                aspects around being able to assist our clients in dealing with SARS in all aspects.
+            </p>
+         </div>
+
+    </section>
+
+    <section class="contactUs">
+        <h1>Get In Contact With Us</h1>
+        <p>For any more information please get in contact with us!</p>
+        <a href="tel: +27 87 096 0900"><button class="contactUsButtons">Call Now</button></a>
+        <a href="mailto:courtney@smartfd.co.za"><button class="contactUsButtons">Email Now</button></a>
+    </section>
+</body>
+</html>

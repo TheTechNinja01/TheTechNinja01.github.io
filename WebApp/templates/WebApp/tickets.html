@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="{% static 'appStyle.css' %}">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+</head>
+<body>
+    <img class="icon" src="{% static 'SmartFD_Images_Icons\Smart FD logo.png' %}">
+    <h1 class="homeHeading" id="supportTickets">Support Tickets</h1>
+
+    <form action="{% url 'tickets page 2' %}">
+        <button type="submit" class="newTicketButton">
+            New Ticket
+        </button>
+    </form>
+
+    <form action="{% url 'home page 3' %}">
+        <button type="submit" class="loginButton2" >
+            Back
+        </button>
+    </form>
+
+</body>
+</html>

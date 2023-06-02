@@ -1,0 +1,372 @@
+@media(max-width: 700px){
+    *{
+        font-family: 'Poppins', sans-serif;/*Font copied from google*/
+    }
+
+    a{
+        color: inherit;
+        text-decoration: none;
+    }
+/*-----------------------------Home Login Page------------------------------*/
+    .form{
+        text-align: center;
+    }
+
+    .icon{
+        height: 200px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 33px;
+    }
+
+    .homeInput{
+        width: 80%;
+        height: 30px;
+        border: none;
+        border-radius: 12px;
+        margin: 10px;
+        padding-left: 10px;
+        box-shadow: 0 0px 5px 0 gray;
+    }
+
+    .keepLogged{
+        height: 25px;
+    }
+
+    .checkbox{
+        width: 25px;
+        height: 25px;
+        margin-left: 40px;
+        background: white;
+        border: solid red;
+        border-width: 0 3px 3px 0;
+    }
+
+    .loginButton{
+        width: 85%;
+        height: 30px;
+        background: red;
+        color: white;
+        margin-top: 10px;
+        border-radius: 12px;
+        border: none;
+        margin: 10px;
+        box-shadow: 0 0px 5px 0 black;
+    }
+
+    .loginButton2{
+        width: 85%;
+        height: 30px;
+        background: red;
+        color: white;
+        margin-top: 10px;
+        border-radius: 12px;
+        border: none;
+        margin: 10px;
+        box-shadow: 0 0px 5px 0 black;
+        margin-left: 30px;
+    }
+
+    .centerLinks{
+        text-align: center;
+        margin-top: -5px;
+    }
+/*-----------------------------About Us Page------------------------------*/
+    #backIcon{
+        position: absolute;
+        font-size: 35px;
+        color: red;
+        margin-top: 15px;
+        margin-left: 45px;
+    }
+
+    .aboutUsTitle{
+        margin-top: 30px;
+    }
+
+    .aboutUsLabel{
+        margin-left: 130px;
+        font-size: 30px;
+        border: 1px solid gray;
+        padding: 10px;
+        border-radius: 12px;
+        box-shadow: 0 0px 5px 0 black;
+    }
+
+    .aboutUsImg{
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .imgText{
+        text-align: center;
+    }
+
+    .aboutUsButton{
+        background: black;
+        color: white;
+        border-radius: 12px;
+        border: 2px solid red;
+        width: 40%;
+        padding: 5px;
+    }
+
+    .aboutUsButtonText{
+        font-size: 13px;
+    }
+
+    .aboutUsSection1{
+        text-align: center;
+    }
+
+    .aboutUsSection2{
+        background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+        url("/static/SmartFD_Images_Icons/financial-statistics-4YD953G-e1595862804650.png");
+        background-repeat: no-repeat;
+        background-size: auto 130%;
+        width: 95%;
+        color: white;
+        padding: 10px;
+    }
+
+    .aboutUsSection3{
+    }
+
+    .aboutUsIcons{
+        width: 30%;
+        margin-bottom: 110px;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .aboutUsSection3Info{
+        width: 60%;
+        display: inline-block;
+    }
+
+    #aboutUsIconA{
+    }
+
+    #aboutUsSection3A{
+    }
+
+    #aboutUsIconB{
+    }
+
+    #aboutUsSection3B{
+        text-align: right;
+    }
+
+    #aboutUsIconC{
+        margin-bottom: 70px;
+    }
+
+    #aboutUsSection3C{
+    }
+
+    .contactUs{
+        text-align: center;
+    }
+
+    .contactUsButtons{
+        height: 30px;
+        width: 90%;
+        margin: 5px;
+        background: white;
+        color: black;
+        border-radius: 12px;
+        border: 2px solid red;
+        box-shadow: 0 2px 5px 0 black;
+    }
+/*-----------------------------Forgot Password------------------------------*/
+    .forgotPasswordPage{
+        text-align: center;
+    }
+    .forgotPasswordInfo{
+
+    }
+
+    .fpLine{
+    }
+
+    #fpLineLeft{
+    }
+
+    #fpLineRight{
+    }
+/*-----------------------------Database------------------------------*/
+    .small_Icon{
+        width: 100px;
+        margin-left: 35%;
+    }
+
+    #fileSearchIcon{
+        position: absolute;
+        margin-top: 18px;
+        margin-left: 25px;
+        color: gray;
+    }
+
+    .fileSearchBar{
+        width: 83%;
+        height: 30px;
+        border: none;
+        border-radius: 12px;
+        margin: 10px;
+        padding-left: 35px;
+        box-shadow: 0 0px 5px 0 gray;
+        margin-left: 4%;
+    }
+
+    .databaseFile{
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #fec5e5;
+        border: 1px solid #fec5e5;
+        border-radius: 12px;
+    }
+
+    .databaseFileIcon{
+        width: 100px;
+        flex: left;
+        display: inline;
+        width: 20%;
+    }
+
+    .databaseFileName{
+        position: absolute;
+        margin-left: 10px;
+        margin-top: 2px;
+        text-align: left;
+        font-size: 20px;
+        display: inline;
+        width: 80%;
+    }
+
+    .hideText{
+        display: none;
+    }
+
+    .hideButton{
+        background-color: transparent;
+        border: 0px;
+        margin-left: -50px;
+    }
+/*-----------------------------Notifications------------------------------*/
+    .notify{
+        width: 80%;
+        text-align: left;
+        height: 800px;
+        border: none;
+        border-radius: 12px;
+        margin: 10px;
+        margin-left: 30px;
+        padding-left: 10px;
+        box-shadow: 0 0px 5px 0 gray;
+    }
+
+    .round {
+  position: relative;
+}
+    .notifyText{
+        display: inline-block;
+        width: 75%;
+    }
+.round{
+    width: 15%;
+    display: inline-block;
+    height: 30px;
+    margin-top: -100px;
+}
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: red;
+  border-color: red;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+
+/*-----------------------------Tickets------------------------------*/
+    .homeHeading{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #supportTickets{
+        margin-top: -35px;
+    }
+
+    .newTicketButton{
+        width: 85%;
+        height: 30px;
+        background: white;
+        color: black;
+        margin-top: 160px;
+        margin-left: 30px;
+        border-radius: 12px;
+        border: none;
+        margin-bottom: 10px;
+        box-shadow: 0 0px 5px 0 black;
+    }
+
+    .ticketSubject{
+        width: 80%;
+        height: 30px;
+        border: none;
+        border-radius: 12px;
+        margin: 10px;
+        margin-left: 30px;
+        padding-left: 10px;
+        box-shadow: 0 0px 5px 0 gray;
+    }
+
+    .ticketMessage{
+        width: 80%;
+        text-align: left;
+        height: 300px;
+        border: none;
+        border-radius: 12px;
+        margin: 10px;
+        margin-left: 30px;
+        padding-left: 10px;
+        box-shadow: 0 0px 5px 0 gray;
+    }
+
+    .ticket3Message{
+        text-align: center;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+}

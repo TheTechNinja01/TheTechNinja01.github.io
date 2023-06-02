@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'appStyle.css' %}">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section>
+      <a href="{{request.META.HTTP_REFERER|escape}}">
+          <i class="fa fa-chevron-circle-left" aria-hidden="true" id="backIcon"></i>
+      </a>
+      <img class="small_Icon" src="{% static 'SmartFD_Images_Icons\Smart FD logo.png' %}">
+  </section>
+  <form>
+    <button type="submit" class="loginButton">
+      View
+    </button>
+  </form>
+
+  <form href="{{request.META.HTTP_REFERER|escape}}">
+    <button type="submit" class="loginButton">
+      Back
+    </button>
+  </form>
+</body>
+</html>

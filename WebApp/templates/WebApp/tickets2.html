@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tickets 2</title>
+    <link rel="stylesheet" href="{% static 'appStyle.css' %}">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+</head>
+<body>
+    <img class="small_Icon" src="{% static 'SmartFD_Images_Icons\Smart FD logo.png' %}">
+    <h1 class="homeHeading">Support Tickets</h1>
+
+    <form method="post" class="uploadTicket" action="{% url 'tickets page 3' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input class="ticketSubject" placeholder="Subject">
+
+        <textarea class="ticketMessage" row="20" cols="50" placeholder="Message"></textarea>
+        <button type="submit" class="loginButton2">
+            Send
+        </button>
+    </form>
+
+    <form action="{{request.META.HTTP_REFERER|escape}}">
+        <button type="submit" class="loginButton2" >
+            Back
+        </button>
+    </form>
+
+</body>
+</html>
